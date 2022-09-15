@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN'
+        'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>System Portal</title>
+    </head>
+    <body>
+        <h1>System Portal</h1>
+
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+            <br>
+        {% endif %}
+
+        <form action='showSystemData' method='GET'>
+            <button type='submit'> See System Info</button>
+        </form>
+
+        <br>
+
+        <form action='fillForm1' method='GET'>
+            <button type='submit'> Fill Form 1 </button>
+        </form>
+
+        <br>
+
+        <form action='fillForm2' method='GET'>
+            <button type='submit'> Fill Form 2 </button>
+        </form>
+
+        <br>
+
+        <form action='button1' method='GET'>
+            <button type='submit'> Button 1 </button>
+        </form>
+
+        <br>
+
+        <form action='button2' method='GET'>
+            <button type='submit'> Button 2 </button>
+        </form>
+
+        <br>
+
+        <form action='button3' method='GET'>
+            <button type='submit'> Button 3 </button>
+        </form>
+
+        <br>
+
+        <form action='resetSystem' method='GET'>
+            <button type='submit'> Reset System </button>
+        </form>
+
+    </body>
+</html>

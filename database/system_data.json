@@ -1,0 +1,29 @@
+{
+    "last_update": "2022/09/15 14:23:59",
+    "logbook": [
+        {
+            "Message": "System is started.",
+            "Time": "2022/09/15 14:22:58"
+        },
+        {
+            "Message": "Button 1 pressed.",
+            "Time": "2022/09/15 14:23:08"
+        },
+        {
+            "Message": "Form 1 filled. this is message 7",
+            "Time": "2022/09/15 14:23:27"
+        },
+        {
+            "Message": "Button 2 pressed.",
+            "Time": "2022/09/15 14:23:29"
+        },
+        {
+            "Message": "Button 3 pressed.",
+            "Time": "2022/09/15 14:23:30"
+        },
+        {
+            "Message": "Form 2 filled. b 1",
+            "Time": "2022/09/15 14:23:36"
+        }
+    ]
+}

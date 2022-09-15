@@ -1,0 +1,52 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN'
+        'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'>
+{% load crispy_forms_tags %}
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <title>Form 1</title>
+</head>
+<body>
+    <h1>Form 1</h1>
+
+    <form action='homePage' method='GET'>
+        <button type='submit'> Home Page </button>
+    </form>
+    <br>
+    <br>
+
+    {% load static %}
+    <img alt="Image" src="{% static 'image.jpg' %}"/>
+    <br>
+    <br>
+
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    Please fill in the form. <br>
+    <br>
+
+    <form action='button4' method='GET'>
+        <button type='submit'> Cancel form </button>
+    </form>
+    <br>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+        <button type="submit"> Send form </button>
+    </form>
+
+    <br>
+    <br>
+
+</body>
+</html>
