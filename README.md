@@ -1,4 +1,4 @@
-# Django website
+# Django server
 
 Web server built on Python with Django.
  
